@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/senha.css">
+    <script src="../js/senha.js"></script>
+    <title>Jogo da senha</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <p class="logo"><a href="index.html">MeGames</a></p>
+        <nav class="nav-bar">
+            <div href="" class="dropdown">
+                <a class="nav-bar-link" class="dropbtn" href="">Jogos ▼</a>
+                <div class="dropdown-content">
+                    <a class="nav-bar-link" href="../pages/senha.html">Descubra a senha</a>
+                    <a class="nav-bar-link" href="#">Descubra a palavra</a>
+                    <a class="nav-bar-link" href="#">Jogo da cobrinha</a>
+                    <a class="nav-bar-link" href="#">Jogo da memoria</a>
+                    <a class="nav-bar-link" href="#">Dama</a>
+                    <a class="nav-bar-link" href="#">Xadrez</a>
+                </div>
+            </div>
+            <a class="nav-bar-link" href="#">Classificação</a>
+            <a class="nav-bar-link" href="../pages/cadastra.html">Cadastrar</a>
+
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="texto">
+            <h2 class="titulo">Descubra a senha</h2>
+            <p class="cronometro"></p>
+        </section>
+        <div class="painel">
+
+
+
+            <section class="digitos">
+                <div class="numeros">
+                    <p id="num-digitados"></p>
+                </div>
+                <div class="btn-digitos">
+                    <button class="btn" onclick="inserir(1)">1</button>
+                    <button class="btn" onclick="inserir(2)">2</button>
+                    <button class="btn" onclick="inserir(3)">3</button>
+                    <button class="btn" onclick="inserir(4)">4</button>
+                    <button class="btn" onclick="inserir(5)">5</button>
+                    <button class="btn" onclick="inserir(6)">6</button>
+                    <button class="btn" onclick="inserir(7)">7</button>
+                    <button class="btn" onclick="inserir(8)">8</button>
+                    <button class="btn" onclick="inserir(9)">9</button>
+                    <button class="btn" onclick="remover()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="50" height="50" viewBox="4 1 40 40">
+                            <path fill="#F44336" d="M21.5 4.5H26.501V43.5H21.5z" transform="rotate(44.001 24 24)">
+                            </path>
+                            <path fill="#F44336" d="M21.5 4.5H26.5V43.501H21.5z" transform="rotate(135.008 24 24)">
+                            </path>
+                        </svg></button>
+                    <button class="btn" onclick="inserir(0)">0</button>
+                    <button class="btn" id="btn-enviar" onclick="enviar()" ><svg
+                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            viewBox="2,0,256,256">
+                            <g fill="#00ff09" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.12,5.12)">
+                                    <path
+                                        d="M41.9375,8.625c-0.66406,0.02344 -1.27344,0.375 -1.625,0.9375l-18.8125,28.78125l-12.1875,-10.53125c-0.52344,-0.54297 -1.30859,-0.74609 -2.03125,-0.51953c-0.71875,0.22266 -1.25391,0.83203 -1.37891,1.57422c-0.125,0.74609 0.17578,1.49609 0.78516,1.94531l13.9375,12.0625c0.4375,0.37109 1.01563,0.53516 1.58203,0.45313c0.57031,-0.08594 1.07422,-0.41016 1.38672,-0.89062l20.09375,-30.6875c0.42969,-0.62891 0.46484,-1.44141 0.09375,-2.10547c-0.37109,-0.66016 -1.08594,-1.05469 -1.84375,-1.01953z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section id="historico" class="tentativas">
+                <h2 class="texto">Tentativas</h2>
+
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
