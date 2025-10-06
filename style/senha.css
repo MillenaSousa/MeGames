@@ -1,13 +1,6 @@
 @import url(../style/style.css);
 
 
-.texto {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 23px;
-}
-
 .cronometro {
     font-family: "Abril Fatface", serif;
     font-size: 35px;

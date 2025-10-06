@@ -19,6 +19,13 @@ body {
     background-color: #FFFFFF;
 }
 
+.texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 23px;
+}
+
 .cabecalho,
 .nav-bar {
     display: flex;

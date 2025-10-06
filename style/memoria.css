@@ -1,0 +1,44 @@
+@import url(../style/style.css);
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    gap: 25px;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    position: relative;
+    transition: all 200ms ease;
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover; 
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.front {
+    background-image: url('../img/Cc.png');
+     transform: rotateY(180deg);
+}
+
+.back {
+    background-image: url('../img/back.png');
+    backface-visibility: hidden;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
